@@ -1,16 +1,30 @@
 {
-    "nav":[
-        {"text":"Features"},
-        {"text":"Enterprise"},
-        {"text":"Support"},
-        {"text":"Pricing"}
+    "nav": [
+        {
+            "text": "Features"
+        },
+        {
+            "text": "Enterprise"
+        },
+        {
+            "text": "Support"
+        },
+        {
+            "text": "Pricing"
+        }
     ],
-    "section":{
-        "title":"Selecciona el plan ideal para ti",
+    "section": {
+        "title": "Selecciona el plan ideal para ti",
         "paragraph": [
-            {"text" : "Ve todo lo que quieras. Sin anuncios."},
-            {"text" : "Recomendaciones exclusivas para ti."},
-            {"text" : "Puedes cambiar de plan o cancelar cuando quieras."}
+            {
+                "text": "Ve todo lo que quieras. Sin anuncios."
+            },
+            {
+                "text": "Recomendaciones exclusivas para ti."
+            },
+            {
+                "text": "Puedes cambiar de plan o cancelar cuando quieras."
+            }
         ]
     },
     "cards": [
@@ -19,50 +33,132 @@
             "price": "16,900",
             "time": "/mo",
             "data": [
-                {"text": "1 users included"},
-                {"text": "2 GB of storage"},
-                {"text": "Email support"},
-                {"text": "Help center access"}
+                {
+                    "text": "1 users included"
+                },
+                {
+                    "text": "2 GB of storage"
+                },
+                {
+                    "text": "Email support"
+                },
+                {
+                    "text": "Help center access"
+                }
             ],
             "button": "Sing up",
-            "styleButton":"w-100 btn btn-lg btn-outline-primary"
+            "styleButton": "w-100 btn btn-lg btn-outline-primary"
         },
         {
             "title": "Estandar",
             "price": "26,900",
             "time": "/mo",
             "data": [
-                {"text": "2 users included"},
-                {"text": "10 GB of storage"},
-                {"text": "Priority email support"},
-                {"text": "Help center access"}
+                {
+                    "text": "2 users included"
+                },
+                {
+                    "text": "10 GB of storage"
+                },
+                {
+                    "text": "Priority email support"
+                },
+                {
+                    "text": "Help center access"
+                }
             ],
             "button": "Get Started",
-            "styleButton":"w-100 btn btn-lg btn-primary"
+            "styleButton": "w-100 btn btn-lg btn-primary"
         },
         {
             "title": "Premium",
             "price": "38,900",
             "time": "/mo",
             "data": [
-                {"text": "4 users included"},
-                {"text": "15 GB of storage"},
-                {"text": "Phone and email support"},
-                {"text": "Help center access"}
+                {
+                    "text": "4 users included"
+                },
+                {
+                    "text": "15 GB of storage"
+                },
+                {
+                    "text": "Phone and email support"
+                },
+                {
+                    "text": "Help center access"
+                }
             ],
             "button": "Contact us",
-            "styleButton":"w-100 btn btn-lg btn-primary"
+            "styleButton": "w-100 btn btn-lg btn-primary"
         }
     ],
     "plans": {
         "title": "Compare plans",
-        "row" :[
-            {"text":"Basic"},
-            {"text":"Pro"},
-            {"text":"Enterprise"}
+        "row": [
+            {
+                "text": "Basic"
+            },
+            {
+                "text": "Pro"
+            },
+            {
+                "text": "Enterprise"
+            }
+        ],
+        "column": [
+            {
+                "text": "High Resolution"
+            },
+            {
+                "text": "Private"
+            },
+            {
+                "text": "Quality"
+            },
+            {
+                "text": "Sharing"
+            },
+            {
+                "text": "Unlimited members"
+            },
+            {
+                "text": "Extra security"
+            }
         ]
-
+    },
+    "footter": {
+        "image": "assets/brand/logo_netflix.png",
+        "copy": "&copy; Campuslands 2023 Bucaramanga",
+        "columns": [
+            {
+                "title": "Features",
+                "links": [
+                    {"text":"Cool stuff"}
+                    {"text":"Random feature"}
+                    {"text":"Team feature"}
+                    {"text":"Stuff for developers"}
+                    {"text":"Another one"}
+                    {"text":"Last time"}
+                ]
+            },
+            {
+                "title": "Resources",
+                "links": [
+                    {"text":"Resource"}
+                    {"text":"Resource name"}
+                    {"text":"Another resource"}
+                    {"text":"Final resource"}
+                ]
+            },
+            {
+                "title": "About",
+                "links": [
+                    {"text":"Team"}
+                    {"text":"Locations"}
+                    {"text":"Privacy"}
+                    {"text":"Terms"}
+                ]
+            }
+        ]
     }
-
-
 }

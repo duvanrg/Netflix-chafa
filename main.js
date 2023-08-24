@@ -52,11 +52,8 @@ let contruirElEncabezado = async () => {
 
     selection = document.querySelector("#selectionJson");
     selection.insertAdjacentHTML("beforeend", /*html */ `
-    <h1 class="display-4 fw-normal text-body-emphasis">${res.section.titulo}</h1>
-    
-    
+    <h1 class="display-4 fw-normal text-body-emphasis">${res.section.titulo}</h1>    
     ${res.section.paragraph.map((value) => /*html */ `
-    
     <p class="fs-5 text-body-secondary"><svg class="bi" width="24" height="24"><use xlink:href="#check" /></svg>${value.text}</p>`).join(" ")}
     `
     )
@@ -84,6 +81,29 @@ let contruirElEncabezado = async () => {
         `
     ).join(" ")}
     `)
+
+
+    selection = document.querySelector("#footerJson");
+    selection.insertAdjacentHTML("beforeend", /*html */ `
+        <div class="col-12 col-md">
+          <img class="mb-2" src="${res.footer.image}" alt="" width="36" height="30">
+          <small class="d-block mb-3 text-body-secondary">${res.footer.copy}</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+    ${res.section.paragraph.map((value) => /*html */ `
+    <p class="fs-5 text-body-secondary"><svg class="bi" width="24" height="24"><use xlink:href="#check" /></svg>${value.text}</p>`).join(" ")}
+    `
+    )
 }
 
 contruirElEncabezado();

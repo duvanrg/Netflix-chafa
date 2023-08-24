@@ -7772,12 +7772,12 @@ fieldset:disabled .btn {
 }
 
 .selectable-card.selected {
-    border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
+    border-color: var(--bs-blue) !important;
+}
 
-    .card-header {
-        color: #fff !important;
-        background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
-    }
+.selectable-card.selected .card-header {
+    color: #fff !important;
+    background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {

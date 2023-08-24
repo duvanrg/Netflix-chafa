@@ -7771,6 +7771,15 @@ fieldset:disabled .btn {
     background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important
 }
 
+.selectable-card.selected {
+    border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
+
+    .card-header {
+        color: #fff !important;
+        background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
+    }
+}
+
 .text-bg-secondary {
     color: #fff !important;
     background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important
@@ -9423,7 +9432,7 @@ fieldset:disabled .btn {
     text-decoration: none !important
 }
 
-.text-decoration-none:hover{
+.text-decoration-none:hover {
     text-decoration: underline !important
 }
 

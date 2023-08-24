@@ -1,7 +1,68 @@
 {
-    
+    "nav":[
+        {"text":"Features"},
+        {"text":"Enterprise"},
+        {"text":"Support"},
+        {"text":"Pricing"}
+    ],
     "section":{
-        "titulo":"Pricing",
-        "parrafo":"The availability of content in HD (720p), Full HD (1080p), Ultra HD (4K) and HDR depends on your internet service and the device in use. Not all content is available in all resolutions. See our Terms of Use for more information."
+        "title":"Selecciona el plan ideal para ti",
+        "paragraph": [
+            {"text" : "Ve todo lo que quieras. Sin anuncios."},
+            {"text" : "Recomendaciones exclusivas para ti."},
+            {"text" : "Puedes cambiar de plan o cancelar cuando quieras."}
+        ]
+    },
+    "cards": [
+        {
+            "title": "Basic",
+            "price": "16,900",
+            "time": "/mo",
+            "data": [
+                {"text": "1 users included"},
+                {"text": "2 GB of storage"},
+                {"text": "Email support"},
+                {"text": "Help center access"}
+            ],
+            "button": "Sing up",
+            "styleButton":"w-100 btn btn-lg btn-outline-primary"
+        },
+        {
+            "title": "Estandar",
+            "price": "26,900",
+            "time": "/mo",
+            "data": [
+                {"text": "2 users included"},
+                {"text": "10 GB of storage"},
+                {"text": "Priority email support"},
+                {"text": "Help center access"}
+            ],
+            "button": "Get Started",
+            "styleButton":"w-100 btn btn-lg btn-primary"
+        },
+        {
+            "title": "Premium",
+            "price": "38,900",
+            "time": "/mo",
+            "data": [
+                {"text": "4 users included"},
+                {"text": "15 GB of storage"},
+                {"text": "Phone and email support"},
+                {"text": "Help center access"}
+            ],
+            "button": "Contact us",
+            "styleButton":"w-100 btn btn-lg btn-primary"
+        }
+    ],
+    "plans": {
+        "title": "Compare plans",
+        "row" :[
+            {"text":"Basic"},
+            {"text":"Pro"},
+            {"text":"Enterprise"}
+        ]
+
     }
+
+
 }

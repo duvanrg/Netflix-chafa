@@ -87,7 +87,7 @@
     --bs-emphasis-color-rgb: 0, 0, 0;
     --bs-secondary-color: rgba(33, 37, 41, 0.75);
     --bs-secondary-color-rgb: 33, 37, 41;
-    --bs-secondary-bg: #e9ecef;
+    --bs-secondary-bg: #464646;
     --bs-secondary-bg-rgb: 233, 236, 239;
     --bs-tertiary-color: rgba(33, 37, 41, 0.5);
     --bs-tertiary-color-rgb: 33, 37, 41;
@@ -135,7 +135,7 @@
     --bs-emphasis-color-rgb: 255, 255, 255;
     --bs-secondary-color: rgba(222, 226, 230, 0.75);
     --bs-secondary-color-rgb: 222, 226, 230;
-    --bs-secondary-bg: #343a40;
+    --bs-secondary-bg: #525050;
     --bs-secondary-bg-rgb: 52, 58, 64;
     --bs-tertiary-color: rgba(222, 226, 230, 0.5);
     --bs-tertiary-color-rgb: 222, 226, 230;
@@ -440,11 +440,17 @@ figure {
     margin: 0 0 1rem
 }
 
-img,
+/* img,
 svg {
+    vertical-align: middle;
+} */
+
+img,
+table svg {
     vertical-align: middle;
     color: #e50914;
 }
+
 
 table {
     caption-side: bottom;
@@ -9415,6 +9421,10 @@ fieldset:disabled .btn {
 
 .text-decoration-none {
     text-decoration: none !important
+}
+
+.text-decoration-none:hover{
+    text-decoration: underline !important
 }
 
 .text-decoration-underline {

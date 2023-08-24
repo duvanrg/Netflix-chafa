@@ -9,7 +9,7 @@
   <meta name="generator" content="Hugo 0.115.4">
   <title>Pricing example · Bootstrap v5.3</title>
   <script src="../assets/js/color-modes.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/main.js" defer></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -98,9 +98,9 @@
 
   <div class="container py-3">
     <header>
-      <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center link-body-emphasis m-4 text-decoration-none">
-          <img src="../assets/brand/netflix.png" alt="" style="width: 200px; position: absolute; margin: 15px;">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center  pb-3 mb-4 border-bottom position-relative">
+        <a href="/" class="d-flex align-items-center justify-content-center link-body-emphasis m-4 text-decoration-none">
+          <img src="../assets/brand/netflix.png" alt="" class="col-2 ">
         </a>
 
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
@@ -172,21 +172,6 @@
           </div>
         </div>
       </div>
-
-      <script>
-        const selectableCards = document.querySelectorAll('.selectable-card');
-    
-        selectableCards.forEach(card => {
-          card.addEventListener('click', () => {
-            if (card.classList.contains('selected')) {
-              card.classList.remove('selected');
-            } else {
-              selectableCards.forEach(c => c.classList.remove('selected'));
-              card.classList.add('selected');
-            }
-          });
-        });
-      </script>
 
       <h2 class="display-6 text-center mb-4">Compare plans</h2>
 

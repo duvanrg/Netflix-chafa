@@ -7927,7 +7927,7 @@ fieldset:disabled .btn {
 
 .link-body-emphasis:focus,
 .link-body-emphasis:hover {
-    color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, .75)) !important;
+    color: #e50914 !important;
     -webkit-text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75)) !important;
     text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75)) !important
 }

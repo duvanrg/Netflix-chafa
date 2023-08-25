@@ -97,73 +97,32 @@ let contruirElEncabezado = async () => {
             </tr>
             </thead>
             <tbody>
+            ${res.plans.column.map((data)=> `
             <tr>
-                <th scope="row" class="text-start">High resolution</th>
+                <th scope="row" class="text-start">${data.text}</th>
                     
+                ${(() => {
+                    let cells = '';
+                    for (let i = 0; i < 3- data. check; i++) {
+                        cells += '<td></td>';
+                    }
+                    return cells;
+                })()}
                 
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
+                ${(() => {
+                    let cells = '';
+                    for (let i = 0; i < data.check; i++) {
+                        cells += /*html*/ `
+                            <td><svg class="bi" width="24" height="24">
+                                <use xlink:href="#check" />
+                            </svg></td>
+                        `;
+                    }
+                    return cells;
+                })()}
             </tr>
-            <tr>
-                <th scope="row" class="text-start">Private</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-            </tr>
-            </tbody>
-
-            <tbody>
-            <tr>
-                <th scope="row" class="text-start">Quality</th>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-start">Sharing</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-start">Unlimited members</th>
-                <td></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-start">Extra security</th>
-                <td></td>
-                <td></td>
-                <td><svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                </svg></td>
-            </tr>
+            `).join(" ")}
+            
             </tbody>
         </table>
         </div>

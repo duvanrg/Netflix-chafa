@@ -107,22 +107,28 @@
         ],
         "column": [
             {
-                "text": "High Resolution"
+                "text": "High Resolution",
+                "check": 3
             },
             {
-                "text": "Private"
+                "text": "Private",
+                "check": 2
             },
             {
-                "text": "Quality"
+                "text": "Quality",
+                "check": 3
             },
             {
-                "text": "Sharing"
+                "text": "Sharing",
+                "check": 2
             },
             {
-                "text": "Unlimited members"
+                "text": "Unlimited members",
+                "check": 2
             },
             {
-                "text": "Extra security"
+                "text": "Extra security",
+                "check": 1
             }
         ]
     },

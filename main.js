@@ -93,14 +93,14 @@ let contruirElEncabezado = async () => {
                 <th style="width: 34%;"></th>
                 ${res.plans.row.map((value)=> `
                 <th style="width: 22%;">${value.text}</th>
-                `)}
+                `).join(" ")}
             </tr>
             </thead>
             <tbody>
             <tr>
                 <th scope="row" class="text-start">High resolution</th>
                     
-                }}
+                
                 <td><svg class="bi" width="24" height="24">
                     <use xlink:href="#check" />
                 </svg></td>

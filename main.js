@@ -72,7 +72,7 @@ let contruirElEncabezado = async () => {
                 <ul class="list-unstyled mt-3 mb-4">
                 ${value.data.map((data) => /*html*/ `
                     <li>${data.text}</li>
-                `).join("")}
+                `).join(" ")}
                 </ul>
                     <button type="button" class="${value.styleButton}">${value.button}</button>
                 </div>
@@ -86,24 +86,19 @@ let contruirElEncabezado = async () => {
     selection = document.querySelector("#footerJson");
     selection.insertAdjacentHTML("beforeend", /*html */ `
         <div class="col-12 col-md">
-          <img class="mb-2" src="${res.footer.image}" alt="" width="36" height="30">
-          <small class="d-block mb-3 text-body-secondary">${res.footer.copy}</small>
+            <img class="mb-2" src="${res.footer.image}" alt="" width="36" height="30">
+            <small class="d-block mb-3 text-body-secondary">${res.footer.copy}</small>
         </div>
-        <div class="col-6 col-md">
-          <h5>Features</h5>
-          <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-          </ul>
-        </div>
-    ${res.section.paragraph.map((value) => /*html */ `
-    <p class="fs-5 text-body-secondary"><svg class="bi" width="24" height="24"><use xlink:href="#check" /></svg>${value.text}</p>`).join(" ")}
-    `
-    )
-}
+        ${res.footer.columns.map((value) =>  /*html */`
+            <div class="col-6 col-md">
+                <h5>${value.title}</h5>
+                <ul class="list-unstyled text-small">
+                ${value.links.map((link) =>  /*html */`
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">${link.text}</a></li>
+                `).join(" ")}
+                </ul>
+            </div>
+        `).join(" ")}
+    `).join(" ")}
 
 contruirElEncabezado();

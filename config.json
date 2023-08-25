@@ -132,7 +132,6 @@
             }
         ]
     },
-
     "footer": {
         "image": "assets/brand/logo_netflix.png",
         "copy": "&copy; Campuslands 2023 Bucaramanga",
@@ -140,30 +139,58 @@
             {
                 "title": "Features",
                 "links": [
-                    {"text":"Cool stuff"},
-                    {"text":"Random feature"},
-                    {"text":"Team feature"},
-                    {"text":"Stuff for developers"},
-                    {"text":"Another one"},
-                    {"text":"Last time"}
+                    {
+                        "text": "Cool stuff"
+                    },
+                    {
+                        "text": "Random feature"
+                    },
+                    {
+                        "text": "Team feature"
+                    },
+                    {
+                        "text": "Stuff for developers"
+                    },
+                    {
+                        "text": "Another one"
+                    },
+                    {
+                        "text": "Last time"
+                    }
                 ]
             },
             {
                 "title": "Resources",
                 "links": [
-                    {"text":"Resource"},
-                    {"text":"Resource name"},
-                    {"text":"Another resource"},
-                    {"text":"Final resource "}
+                    {
+                        "text": "Resource"
+                    },
+                    {
+                        "text": "Resource name"
+                    },
+                    {
+                        "text": "Another resource"
+                    },
+                    {
+                        "text": "Final resource "
+                    }
                 ]
             },
             {
                 "title": "About",
                 "links": [
-                    {"text":"Team"},
-                    {"text":"Locations"},
-                    {"text":"Privacy"},
-                    {"text":"Terms"}
+                    {
+                        "text": "Team"
+                    },
+                    {
+                        "text": "Locations"
+                    },
+                    {
+                        "text": "Privacy"
+                    },
+                    {
+                        "text": "Terms"
+                    }
                 ]
             }
         ]

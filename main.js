@@ -52,7 +52,7 @@ let contruirElEncabezado = async () => {
 
     selection = document.querySelector("#selectionJson");
     selection.insertAdjacentHTML("beforeend", /*html */ `
-    <h1 class="display-4 fw-normal text-body-emphasis">${res.section.titulo}</h1>    
+    <h1 class="display-4 fw-normal text-body-emphasis">${res.section.title}</h1>    
     ${res.section.paragraph.map((value) => /*html */ `
     <p class="fs-5 text-body-secondary"><svg class="bi" width="24" height="24"><use xlink:href="#check" /></svg>${value.text}</p>`).join(" ")}
     `
